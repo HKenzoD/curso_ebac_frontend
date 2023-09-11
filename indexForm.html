@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="./mainForm.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <form>
+            <div class="form-campo">
+                <lable for="nome">Nome completo:</lable>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="form-campo">
+                <lable for="fone">Telefone:</lable>
+                <input type="tel" id="fone" name="fone">
+            </div>
+            <div class="form-campo">
+                <lable for="email">E-mail:</lable>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-campo">
+                <lable for="cpf">CPF:</lable>
+                <input type="tel" id="cpf" name="cpf">
+            </div>
+            <div class="form-campo">
+                <lable for="endereco">Endereço completo:</lable>
+                <input type="text" id="endereco" name="endereco">
+            </div>
+            <div class="form-campo">
+                <lable for="cep">CEP:</lable>
+                <input type="tel" id="cep" name="cep">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./mainForm.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebac Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mainForm.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1>Ebac Motors</h1>
+            <div class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#sobre-a-loja">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#em-destaque">Em destaque</a>
+                    </li>
+                    <li>
+                        <a href="#promocoes">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="carrossel">
+        <img src="./imagens-icones/images/slide1.png" alt="Porsche">
+        <img src="./imagens-icones/images/slide2.png" alt="BMW">
+        <img src="./imagens-icones/images/slide3.png" alt="Ford">
+    </div>
+    <section id="sobre-a-loja">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="container container-flex">
+            <img src="./imagens-icones/images/loja.jpg" alt="Imagem loja">
+            <div>
+                <h2>Sobre a Ebac Motors</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus mollitia corporis sequi voluptates debitis, cumque dolorem porro iure minus, error, labore deserunt placeat adipisci. Praesentium sit esse inventore exercitationem beatae.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis iusto repudiandae sunt eaque fuga dolor nisi, illo voluptatum, autem a amet ab ducimus, debitis sint. Excepturi porro vitae nobis.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="em-destaque">
+        <br />
+        <br />
+        <br />    
+        <br />
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="promocoes">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio automático.
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contato">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <lable for="nome">Nome:</lable>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <lable for="fone">Telefone:</lable>
+                    <input type="tel" id="fone" name="fone">
+                </div>
+                <div class="form-campo">
+                    <lable for="email">E-mail:</lable>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <lable for="veiculo">Veículo desejado:</lable>
+                    <input type="text" id="veiculo" name="veiculo">
+                </div>
+                <div class="form-campo">
+                    <lable for="msg">Mensagem:</lable>
+                    <textarea id="msg" name="msg"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2023 &copy; EBAC Motors - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./imagens-icones/icones/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./imagens-icones/icones/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./imagens-icones/icones/youtube.png" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./mainForm.js"></script>
+</body>
+</html>
